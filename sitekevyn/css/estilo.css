@@ -1,0 +1,154 @@
+/* Formação Geral */
+body{
+	font-family: "Shadows+Into+Light", "Indie+Flower", cursive;
+}
+
+h1, h2, h3{
+	margin: 0;
+	font-family: display, Indie+Flower, cursive;
+	font-weight: 700;
+}
+
+p{
+	font-family: "Indie+Flower", "Shadows+Into+Light", cursive;
+}
+
+.container{
+	width: 100%;
+}
+
+/* Cabeçalho ou barra de navegação */
+
+.logo img{
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000;
+	padding: 25px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	padding: 2%;
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Header */
+
+header{
+	background-image: url("../img/fundo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+
+.botao{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #4132f5;
+	font-size: .8em;
+	border-radius: 0%;
+}
+
+/* Sobre */
+
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+#sobre h2{
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.foto img{
+	width: 60%;
+}
+
+.foto {
+	float: left;
+	width: 50%;
+}
+
+.texto{
+	float: right;
+	width: 50%;
+}
+
+/* Cabeçalho ou barra de navegação */
+
+@media screen and (min-width: 768px){
+	
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+	
+	/* header */
+
+	header{
+		height: 60vh;
+		justify-content: center;
+	}
+	/* SOBRE */
+	#sobre{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		height: 90vh;
+		justify-content: center;
+		min-height: 90vh;
+	}
+	#sobre h2{
+		text-align: center;
+		width: 100%;
+	}
+	#sobre div{
+		flex-grow: 1;
+		flex-basis: 300px;
+		padding: 0 10px;
+	}
+}
