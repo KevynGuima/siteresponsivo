@@ -114,6 +114,93 @@ header p{
 	width: 50%;
 }
 
+/* Especialidades */
+
+#especialidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	background-color: #000;
+	color: #fff;
+}
+
+#especialidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#especialidades p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2em;
+}
+
+#especialidades img{
+	margin: 10px 0;
+}
+
+#especialidades h2{
+	font-size: 2em;
+}
+
+/* Competencias */
+
+#competencias{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#competencias h2{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#competencias h3{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;	
+}
+
+#competencias p{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+
+#competencias a{
+	text-decoration: none;
+}
+
+#competencias img{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#competencias .comp p{
+	border-left: 5px groove #00FFFF;
+	border-right: 5px groove #00FFFF;
+	border-bottom: 5px groove #00FFFF;
+	margin-top: 0;
+	font-family: "Goshi Hand", "Helvetica", "Arial", sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+}
+
 /* Cabeçalho ou barra de navegação */
 
 @media screen and (min-width: 768px){
@@ -151,4 +238,38 @@ header p{
 		flex-basis: 300px;
 		padding: 0 10px;
 	}
+	/* ESPECIALIDADES */
+	#especialidades{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px
+		margin: 0 auto;
+	}
+	#especialidades h2{
+		text-align: center;
+		width: 100%;
+	}
+	#especialidades div{
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+	/* COMPETENCIAS */
+	#competencias{
+		flex-direction: row;
+		flex-wrap: wrap;		
+	}
+	#competencias h2{
+		width: 100%;
+		text-align: center;		
+	}
+	#competencias h3{
+		width: 100%;
+		text-align: center;		
+	}
+	#competencias .comp{
+		width: 33.3333333333%;
+		text-align: center;
+	}	
 }
