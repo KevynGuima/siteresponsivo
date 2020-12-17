@@ -1,6 +1,7 @@
 /* Formação Geral */
 body{
 	font-family: "Shadows+Into+Light", "Indie+Flower", cursive;
+	overflow-x: hidden;
 }
 
 h1, h2, h3{
@@ -123,8 +124,6 @@ header p{
 	align-items: center;
 	position: relative;
 	margin: 0 auto;
-	background-color: #000;
-	color: #fff;
 }
 
 #especialidades div{
@@ -186,7 +185,7 @@ header p{
 }
 
 #competencias img{
-	width: 100%;
+	width: 80%;
 	margin-bottom: 0;
 }
 
@@ -201,6 +200,95 @@ header p{
 	line-height: 1.5;
 }
 
+.trab img:hover{
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.trab img{
+	border: 10px groove #4169E1;
+	width: 100%;
+}
+
+/* hobby */
+
+#hobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 100%;
+}
+
+#hobby h2{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.hobby{
+	width: 80%;
+	align-items: center;
+	text-align: center;
+}
+
+.hobby h3{
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 14px;
+}
+
+/* Contato */
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	width: 100%;
+}
+
+#contato h2{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+	color: #4169E1;
+}
+
+#contato > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: #4169E1;
+	text-align: center;
+}
+
+#contato a{
+	text-decoration: none;
+	color: #4169E1;
+	font-family: "Gochi Hand", "Helvetica", "Arial", sans-serif;
+	text-align: center;
+}
+
+/* footer */
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #000;
+	color: #f1f1f1;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* Cabeçalho ou barra de navegação */
 
 @media screen and (min-width: 768px){
@@ -213,9 +301,7 @@ header p{
 		flex-direction: row;
 		width: 70%;
 	}
-	
-	/* header */
-
+	/* HEADER */
 	header{
 		height: 60vh;
 		justify-content: center;
@@ -243,7 +329,7 @@ header p{
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		max-width: 1000px
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 	#especialidades h2{
@@ -271,5 +357,19 @@ header p{
 	#competencias .comp{
 		width: 33.3333333333%;
 		text-align: center;
-	}	
+	}
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		max-height: 40vh;
+		width: 100%;
+	}
+	#contato h2, #contato p{
+		width: 100%;
+		text-align: center;
+	}
 }
